@@ -1,0 +1,125 @@
+/* Corps de page centré */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom, #e6f2f8, #ffffff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Conteneur du chatbot */
+.chat-container {
+    width: 95%;
+    max-width: 550px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 123, 255, 0.15);
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Titres */
+h1 {
+    color: #0a3d62; /* bleu médical foncé */
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+h2 {
+    color: #1675d3;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Zone de chat (PLUS LONGUE) */
+.chat-box {
+    width: 95%;
+    height: 350px; /* 👈 zone plus grande */
+    border: 1px solid #bcdffb;
+    border-radius: 15px;
+    padding: 15px;
+    overflow-y: auto;
+    background-color: #f9fcff;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Input et bouton */
+.input-container {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    margin :10px;
+}
+
+input {
+    flex: 1;
+    padding: 12px;
+    border-radius: 25px;
+    border: 1px solid #bcdffb;
+    outline: none;
+    font-size: 16px;
+}
+
+input:focus {
+    border-color: #1e90ff;
+}
+
+/* Bouton */
+button {
+    padding: 12px 20px;
+    border: none;
+    background-color: #1e90ff;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #0a74da;
+}
+
+/* Messages */
+.message {
+    margin: 6px 0;
+    padding: 10px 15px;
+    border-radius: 20px;
+    max-width: 80%;
+    font-size: 15px;
+    word-wrap: break-word;
+}
+
+/* Message utilisateur */
+.user-message {
+    background-color: #d0ebff;
+    align-self: flex-end;
+}
+
+/* Message bot */
+.bot-message {
+    background-color: #d4f5e9;
+    align-self: flex-start;
+}
+
+/* Message urgence */
+.bot-message.urgence {
+    background-color: #ffe5e5;
+    color: #c0392b;
+    font-weight: bold;
+}
+
+/* Scroll esthétique */
+.chat-box::-webkit-scrollbar {
+    width: 6px;
+}
+
+.chat-box::-webkit-scrollbar-thumb {
+    background-color: rgba(0,0,0,0.15);
+    border-radius: 3px;
+}
