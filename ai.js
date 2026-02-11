@@ -132,12 +132,12 @@ function analyserMessage(message){
 
     // --------- Préventions enrichies ----------
     const prevention = {
-        "alcool":"🟢 Alcool : limitez consommation, hydratez-vous.",
-        "tabac":"🟢 Tabac : évitez ou arrêtez de fumer.",
+        "alcool":"🟢Limitez votre consommation d’alcool pour préserver votre corps et votre esprit.",
+        "tabac":"🟢 Évitez ou réduisez le tabac pour protéger vos poumons et votre santé globale.",
         "activite physique":"🟢 Activité physique : 30 min/jour recommandés.",
         "alimentation":"🟢 Alimentation : fruits, légumes, fibres, limitez sucres et graisses saturées.",
         "sommeil":"🟢 Sommeil : 7-8h/nuit.",
-        "stress":"🟢 Stress : techniques de respiration, relaxation.",
+        "stress":"🟢Gérez votre stress avec des pauses, de la respiration ou une activité physique régulière pour votre bien-être.",
         "hydratation":"🟢 Hydratation : buvez 1,5-2L d'eau/jour.",
         "vaccination":"🟢 Vaccination : maintenez vos vaccins à jour."
     };
